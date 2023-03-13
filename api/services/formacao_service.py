@@ -3,7 +3,7 @@ from api import db
 
 def cadastrar_formacao(formacao):
     
-    formacao = formacao_model.Formacao(nome=formacao.nome)
+    formacao = formacao_model.Formacao(nome=formacao.nome, descricao=formacao.descricao)
     db.session.add(formacao)
     db.session.commit()
     return formacao

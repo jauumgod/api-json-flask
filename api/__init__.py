@@ -18,5 +18,9 @@ db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 api = Api(app)
 
-from .views import curso_views
-from .models import curso_model
+
+#PRECISA SER IMPORTADO AQUI DE FROM VIEWS E MODELS PARA EXECUTAR OS COMANDOS DE MIGRATIONS;
+
+from .views import curso_views, formacao_views
+from .models import curso_model, formacao_model
+ 
